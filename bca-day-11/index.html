@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert card</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        body{
+            background-color: rgb(185, 121, 167);
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .alert{
+            padding: 20px;
+            margin-bottom: 15px;
+            boder-radius: 5px;
+            border: 2px solid transparent;
+            background-color: #f38b8bcc;
+
+        }
+        .success {
+            border-color: rgb(87, 196, 87);
+        }
+
+        .warning {
+            border-color: rgb(241, 214, 164);
+        }
+
+        .error {
+            border-color: rgb(243, 149, 149);
+        }
+   
+    </style>
+</head>
+<body>
+
+    <div class="Alert-success">
+        <h3>success</h3>
+        <p> your task has been completed successfully.</p>
+    </div>
+
+    <div class="alert warning">
+        <h3>Warning!</h3>
+        <p>Please check your input before continuing.</p>
+</div>
+
+<div class="alert error">
+        <h3>Error!</h3>
+        <p>Something went wrong. Please try again.</p>
+    </div>
+
+</body>
+</html>
