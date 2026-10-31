@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #123b69;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .options input {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        .options label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #123b69;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2563eb;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Job Application Form</h1>
+
+        <form>
+
+            <!-- Full Name -->
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your full name" required>
+
+            <!-- Email -->
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <!-- Phone Number -->
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="Enter phone number" required>
+
+            <!-- Resume Upload -->
+            <label>Upload Resume:</label>
+            <input type="file" required>
+
+            <!-- Experience -->
+            <label>Experience:</label>
+
+            <div class="options">
+                <label>
+                    <input type="radio" name="experience" value="fresher" required>
+                    Fresher
+                </label>
+
+                <label>
+                    <input type="radio" name="experience" value="1-2 years">
+                    1-2 Years
+                </label>
+
+                <label>
+                    <input type="radio" name="experience" value="3+ years">
+                    3+ Years
+                </label>
+            </div>
+
+            <!-- Known Technologies -->
+            <label>Known Technologies:</label>
+
+            <div class="options">
+                <label>
+                    <input type="checkbox" name="skills" value="HTML">
+                    HTML
+                </label>
+
+                <label>
+                    <input type="checkbox" name="skills" value="CSS">
+                    CSS
+                </label>
+
+                <label>
+                    <input type="checkbox" name="skills" value="JavaScript">
+                    JavaScript
+                </label>
+
+                <label>
+                    <input type="checkbox" name="skills" value="C">
+                    C
+                </label>
+
+                <label>
+                    <input type="checkbox" name="skills" value="SQL">
+                    SQL
+                </label>
+            </div>
+
+            <!-- Cover Letter -->
+            <label>Cover Letter:</label>
+            <textarea rows="5" placeholder="Write your cover letter here..." required></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Application</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
